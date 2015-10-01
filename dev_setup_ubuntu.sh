@@ -18,6 +18,7 @@ setup_vim () {
 setup_git () {
 	sudo apt-get install -y git	
 	sudo pip install gitflow
+	sudo pip install git-up
 	cp .gitconfig ~/.gitconfig
 	cp .gitignore_global ~/.gitignore_global
 }
@@ -34,9 +35,9 @@ setup_zsh () {
 	sudo apt-get install -y zsh
 	sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 	sudo pip install powerline-status
-	curl -k -L https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf -o /usr/share/fonts/X11/misc/PowerlineSymbols.otf
-	curl -k -L https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf -o /etc/fonts/conf.d/10-powerline-symbols.conf
-	fc-cache -vf /usr/share/fonts/X11/misc
+	sudo curl -k -L https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf -o /usr/share/fonts/X11/misc/PowerlineSymbols.otf
+	sudo curl -k -L https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf -o /etc/fonts/conf.d/10-powerline-symbols.conf
+	sudo fc-cache -vf /usr/share/fonts/X11/misc
 	# Get zshrc
 	cp .zshrc ~/.zshrc
 }
@@ -46,7 +47,7 @@ setup_utils() {
 }
 
 setup_all () {
-	apt-get update
+	sudo apt-get update
 	setup_python
 	setup_git
 	setup_vim

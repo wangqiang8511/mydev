@@ -79,6 +79,8 @@ NeoBundle 'vim-scripts/pythoncomplete'
 
 ## Git
 
+* install gitflow
+* install git-up
 * setup vim as default editor
 * setup vimdiff as default merge tool
 * setup global ignore to ignore vim tmp files
