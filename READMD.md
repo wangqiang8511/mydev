@@ -35,6 +35,16 @@ Clone this repo.
 * oh-my-zsh
 * powerline fonts
 * agnoster theme 
+* Bind following keys (Using vim binding but keep common emacs binding)
+
+```bash
+bindkey -v
+bindkey '^J' history-search-forward
+bindkey '^K' history-search-backward
+bindkey '^A' beginning-of-line
+bindkey '^E' end-of-line
+bindkey '^U' kill-whole-line
+```
 
 ## vim
 
@@ -66,3 +76,9 @@ NeoBundle 'vim-scripts/pythoncomplete'
 
 * Using ` as ctrl+a
 * Using zsh as default shell
+
+## Git
+
+* setup vim as default editor
+* setup vimdiff as default merge tool
+* setup global ignore to ignore vim tmp files

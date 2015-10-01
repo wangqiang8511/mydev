@@ -18,6 +18,8 @@ setup_vim () {
 setup_git () {
 	sudo apt-get install -y git	
 	sudo pip install gitflow
+	cp .gitconfig ~/.gitconfig
+	cp .gitignore_global ~/.gitignore_global
 }
 
 # Setup screen
