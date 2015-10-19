@@ -43,7 +43,13 @@ setup_zsh () {
 }
 
 setup_utils() {
-	sudo pip install ranger
+	# setup ranger
+	curl -k -L http://nongnu.org/ranger/ranger-stable.tar.gz -o /tmp/ranger-stable.tar.gz
+	rm -rf /tmp/ranger-stable
+	mkdir -p /tmp/ranger-stable
+	cd /tmp && tar xvf ranger-stable.tar.gz -C /tmp/ranger-stable
+	cd /tmp/ranger-stable/ranger-* && sudo make install
+	cd ~/
 }
 
 setup_all () {
