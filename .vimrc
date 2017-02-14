@@ -216,3 +216,11 @@ let g:neosnippet#enable_snipmate_compatibility = 1
 
 " Tell Neosnippet about the other snippets
 let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+" Disable python rope
+let g:pymode_rope=0
+let g:pymode_options_max_line_length=120
