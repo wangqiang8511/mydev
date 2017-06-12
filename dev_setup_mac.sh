@@ -36,7 +36,6 @@ setup_zsh () {
 }
 
 setup_all () {
-	sudo apt-get update
 	setup_python
 	setup_git
 	setup_vim
