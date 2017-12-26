@@ -36,6 +36,8 @@ NeoBundle 'tpope/vim-markdown'
 NeoBundle 'chase/vim-ansible-yaml'
 NeoBundle 'vim-scripts/taglist.vim'
 NeoBundle 'vim-scripts/pythoncomplete'
+NeoBundle 'elzr/vim-json'
+NeoBundle 'rust-lang/rust.vim'
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
